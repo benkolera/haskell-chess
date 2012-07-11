@@ -1,18 +1,35 @@
 * PROBLEM
 
 Maintain the state of a chess board (an 8×8 grid), including the position of pieces on the board.
-Provide an application programming interface to position the pieces on the board and query the state of the board. The required operations are:
-Move a piece from one position to another. If a piece already exists at the destination position it is removed first.
-Remove a piece that is at a specified position on the board.
-Reset the position of pieces. The board is reset ready for the start of a new chess match.
-Return the type of piece that’s at a specified position on the board. Note that there needs to be a way of reporting that the specified position is empty.
+Provide an application programming interface to position the pieces on the board and query the state of the board. 
+
+** Operations
+The required operations are:
+
+• Move a piece from one position to another. If a piece already exists at the destination position it is removed first.
+
+• Remove a piece that is at a specified position on the board.
+
+• Reset the position of pieces. The board is reset ready for the start of a new chess match.
+
+• Return the type of piece that’s at a specified position on the board. Note that there needs to be a way of reporting that the specified position is empty.
+
+** Pieces 
 Support the following types of chess pieces:
- • King
- • Queen
- • Bishop
- • Knight
- • Rook
- • Pawn
+
+• King
+
+• Queen
+
+• Bishop
+
+• Knight
+
+• Rook
+
+• Pawn
+
+** Teams 
 Support two teams – black and white.
 
 * Explanation
