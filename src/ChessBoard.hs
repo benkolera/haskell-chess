@@ -95,7 +95,11 @@ these conditions:
 Otherwise you will get a Right containing a new board and an optional piece
 that was captured.
 -}
-move :: Board -> Position -> Position -> MoveResult
+move ::
+  Board
+  -> Position -- ^ Start position
+  -> Position -- ^ End position
+  -> MoveResult
 move board start end = let
   startC = posToCoord start
   endC   = posToCoord end

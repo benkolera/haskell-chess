@@ -1,7 +1,27 @@
--- | These positions restrict moves and queries to only valid positions, which
--- helps to keep the interface cleaner. Coordinates can be used but it is up to
--- the client to create a position out of them via coordToPos before they can
--- modify the board.
+{- |
+These positions restrict moves and queries to only valid positions, which
+helps to keep the interface cleaner. Coordinates can be used but it is up to
+the client to create a position out of them via coordToPos before they can
+modify the board.
+
+Board is layed out as such (showing starting pieces as a reference):
+
+@
+        -----------------------------------------
+      8 | rb | nb | bb | qb | kb | bb | nb | rb |
+      7 | pb | pb | pb | pb | pb | pb | pb | pb |
+      6 |    |    |    |    |    |    |    |    |
+      5 |    |    |    |    |    |    |    |    |
+      4 |    |    |    |    |    |    |    |    |
+      3 |    |    |    |    |    |    |    |    |
+      2 | pw | pw | pw | pw | pw | pw | pw | pw |
+      1 | rw | nw | bw | qw | kw | bw | nw | rw |
+        -----------------------------------------
+        |  A |  B |  C |  D |  E |  F |  G |  H |
+@
+
+-}
+
 module ChessBoard.Position (
   Position(Position)
   , Coord
