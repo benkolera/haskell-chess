@@ -1,5 +1,4 @@
-
-PROBLEM
+* PROBLEM
 
 Maintain the state of a chess board (an 8×8 grid), including the position of pieces on the board.
 Provide an application programming interface to position the pieces on the board and query the state of the board. The required operations are:
@@ -16,13 +15,13 @@ Support the following types of chess pieces:
  • Pawn
 Support two teams – black and white.
 
-Explanation
+* Explanation
 
 The requirements above are a reasonably formal set of specifications for the component we’re going to develop in this exercise. While they certainly have some holes in them and some ambiguities, they are reasonably similar to the set of system requirements programmers are often given.
 
 We want to take care of the basic ability to move pieces around the chess board and keep track of where they are. We need to be able to create a board with the pieces in the standard positions for a game of chess and then move pieces about the board. Don’t worry about making sure that the moves are actually allowed in a game of chess.
 
-Testing
+* Testing
 
 Every good programmer writes a lot of tests to make sure the code functions correctly. It’s usually a good idea to write your tests before you write the actual code so that as you go along, you get instant feedback on whether or not your code is doing the right thing. It also helps design your code as code that’s easy to test, tends to be better designed and easier to use and maintain.
 
