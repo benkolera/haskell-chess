@@ -4,14 +4,14 @@ be manipulated without the piece move restrictions that are standard to a game
 of chess.
 -}
 module ChessBoard (
-  initBoard 
-  , move
+  Board -- Don't expose the constructor!
+  , MoveResult
+  , BoardSquare
+  , initBoard
   , pieceAt
   , removePieceAt
+  , move
   , boardToList
-  , MoveResult
-  , Board -- Don't expose the constructor!
-  , BoardSquare
 ) where
 
 
